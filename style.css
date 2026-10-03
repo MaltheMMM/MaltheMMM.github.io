@@ -136,3 +136,10 @@ main{padding-bottom:70px}
  .prose p{font-size:15px;line-height:1.75}
  .footer-row{flex-direction:column}
 }
+/* Archive refinements */
+.item > div:only-child{grid-column:1 / -1}
+.books-list .item{display:grid;grid-template-columns:82px minmax(0,1fr);gap:26px}
+.books-list .item .date{font-size:10px;font-weight:600;letter-spacing:.14em}
+.books-list .item h3{margin-bottom:8px}
+.books-list .item p{max-width:900px}
+@media(max-width:600px){.books-list .item{display:block}.books-list .item .date{margin-bottom:6px}}
