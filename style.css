@@ -143,3 +143,8 @@ main{padding-bottom:70px}
 .books-list .item h3{margin-bottom:8px}
 .books-list .item p{max-width:900px}
 @media(max-width:600px){.books-list .item{display:block}.books-list .item .date{margin-bottom:6px}}
+
+/* Applied Works op-ed archive */
+.opeds-list .portfolio-item{display:grid;grid-template-columns:120px minmax(0,1fr);gap:30px;align-items:start}
+.opeds-list .portfolio-item .date{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);padding-top:5px}
+@media(max-width:600px){.opeds-list .portfolio-item{display:block}.opeds-list .portfolio-item .date{padding-top:0;margin-bottom:5px}}
