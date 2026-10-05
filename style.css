@@ -148,3 +148,7 @@ main{padding-bottom:70px}
 .opeds-list .portfolio-item{display:grid;grid-template-columns:120px minmax(0,1fr);gap:30px;align-items:start}
 .opeds-list .portfolio-item .date{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);padding-top:5px}
 @media(max-width:600px){.opeds-list .portfolio-item{display:block}.opeds-list .portfolio-item .date{padding-top:0;margin-bottom:5px}}
+
+.public-policy-list .portfolio-item{display:grid;grid-template-columns:120px minmax(0,1fr);gap:30px;align-items:start}
+.public-policy-list .portfolio-item .date{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);padding-top:5px}
+@media(max-width:600px){.public-policy-list .portfolio-item{display:block}.public-policy-list .portfolio-item .date{padding-top:0;margin-bottom:5px}}
