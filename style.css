@@ -152,3 +152,20 @@ main{padding-bottom:70px}
 .public-policy-list .portfolio-item{display:grid;grid-template-columns:120px minmax(0,1fr);gap:30px;align-items:start}
 .public-policy-list .portfolio-item .date{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);padding-top:5px}
 @media(max-width:600px){.public-policy-list .portfolio-item{display:block}.public-policy-list .portfolio-item .date{padding-top:0;margin-bottom:5px}}
+
+
+/* Compact typography and spacing — reversible override only */
+body{line-height:1.55}
+.page-hero h1{font-size:clamp(44px,5.4vw,70px)}
+.section h2{font-size:30px;margin-top:48px;margin-bottom:17px}
+.item,.portfolio-item{padding-top:18px;padding-bottom:18px}
+.item h3,.portfolio-item h3{font-size:19px}
+.prose p{font-size:15px;line-height:1.7}
+@media(max-width:600px){
+ .page-hero h1{font-size:42px}
+ .section h2{font-size:27px;margin-top:34px;margin-bottom:15px}
+ .item,.portfolio-item{padding-top:16px;padding-bottom:16px}
+ .item h3{font-size:18px}
+ .portfolio-item h3{font-size:18px}
+ .prose p{font-size:14px;line-height:1.65}
+}
