@@ -169,3 +169,24 @@ body{line-height:1.55}
  .portfolio-item h3{font-size:18px}
  .prose p{font-size:14px;line-height:1.65}
 }
+
+
+/* Further compact typography and spacing — reversible override */
+body{line-height:1.48}
+.page-hero h1{font-size:clamp(40px,5vw,64px)}
+.kicker{font-size:14px;line-height:1.55}
+.section h2{font-size:27px;margin-top:38px;margin-bottom:14px}
+.item,.portfolio-item{padding-top:14px;padding-bottom:14px}
+.item h3,.portfolio-item h3{font-size:18px;line-height:1.22;margin-bottom:5px}
+.item p,.portfolio-item p{font-size:12px;line-height:1.55}
+.prose p{font-size:14px;line-height:1.6}
+.section-note{margin-bottom:13px}
+@media(max-width:600px){
+ .page-hero h1{font-size:38px}
+ .kicker{font-size:13px;line-height:1.55}
+ .section h2{font-size:24px;margin-top:30px;margin-bottom:12px}
+ .item,.portfolio-item{padding-top:12px;padding-bottom:12px}
+ .item h3,.portfolio-item h3{font-size:17px;line-height:1.22;margin-bottom:4px}
+ .item p,.portfolio-item p{font-size:12px;line-height:1.5}
+ .prose p{font-size:13px;line-height:1.55}
+}
