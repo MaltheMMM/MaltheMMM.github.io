@@ -190,3 +190,68 @@ body{line-height:1.48}
  .item p,.portfolio-item p{font-size:12px;line-height:1.5}
  .prose p{font-size:13px;line-height:1.55}
 }
+
+
+/* Homepage: keep the portrait and all four section links visible on common laptop/monitor heights */
+@media(min-width:601px){
+  .home-hero-photo{
+    min-height:0;
+    height:clamp(270px,40vh,340px);
+    grid-template-columns:44% 56%;
+  }
+  .home-hero-copy{
+    min-height:0;
+    padding-top:28px;
+    padding-bottom:28px;
+  }
+  .home-hero-copy h1{
+    font-size:clamp(48px,5.2vw,70px);
+    margin-bottom:22px;
+  }
+  .home-portrait-wrap{
+    min-height:0;
+    height:100%;
+  }
+  .home-portrait{
+    min-height:0;
+    height:100%;
+    object-fit:cover;
+    object-position:center 38%;
+  }
+  .home-index{
+    padding-top:18px;
+    padding-bottom:24px;
+  }
+  .home-index-item{
+    min-height:112px;
+    padding-top:8px;
+    padding-right:22px;
+    margin-right:20px;
+  }
+  .index-title{
+    font-size:clamp(23px,2.3vw,29px);
+  }
+  .index-rule{
+    margin:15px 0 12px;
+    width:52px;
+  }
+  .index-arrow{font-size:21px}
+}
+@media(min-width:601px) and (max-width:900px){
+  .home-hero-photo{
+    height:290px;
+    grid-template-columns:42% 58%;
+  }
+  .home-hero-copy{padding-left:7%;padding-right:4%}
+  .home-hero-copy h1{font-size:clamp(44px,7vw,60px)}
+  .home-index{padding-top:12px;padding-bottom:18px}
+  .home-index-item{
+    min-height:96px;
+    margin-right:18px;
+    padding-top:8px;
+    padding-bottom:8px;
+  }
+  .home-index-item:nth-child(2){margin-right:0}
+  .index-title{font-size:25px}
+  .index-rule{margin:12px 0 9px}
+}
