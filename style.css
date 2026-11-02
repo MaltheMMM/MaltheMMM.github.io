@@ -255,3 +255,37 @@ body{line-height:1.48}
   .index-title{font-size:25px}
   .index-rule{margin:12px 0 9px}
 }
+
+
+/* Homepage refinement: slightly smaller hero and tighter section navigation */
+@media(min-width:601px){
+  .home-page main{padding-bottom:22px}
+  .home-hero-photo{
+    height:clamp(245px,35vh,305px);
+    grid-template-columns:44% 56%;
+  }
+  .home-hero-copy{padding-top:20px;padding-bottom:20px}
+  .home-hero-copy h1{
+    font-size:clamp(44px,4.7vw,62px);
+    margin-bottom:17px;
+  }
+  .hero-rule{width:58px;height:2px}
+  .home-index{padding:12px 0 18px}
+  .home-index-item{
+    min-height:92px;
+    padding-top:5px;
+    padding-right:18px;
+    margin-right:17px;
+  }
+  .index-title{font-size:clamp(21px,2vw,26px)}
+  .index-rule{width:46px;height:2px;margin:11px 0 9px}
+  .index-arrow{font-size:19px}
+}
+@media(min-width:601px) and (max-width:900px){
+  .home-hero-photo{height:250px}
+  .home-hero-copy h1{font-size:clamp(40px,6vw,52px)}
+  .home-index{padding:9px 0 14px}
+  .home-index-item{min-height:82px;padding-right:12px;margin-right:12px}
+  .index-title{font-size:22px}
+  .index-rule{margin:9px 0 7px}
+}
