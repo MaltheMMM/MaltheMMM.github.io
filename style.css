@@ -289,3 +289,26 @@ body{line-height:1.48}
   .index-title{font-size:22px}
   .index-rule{margin:9px 0 7px}
 }
+
+
+/* Homepage: additional 25% compactness pass */
+@media(min-width:601px){
+  .home-hero-photo{height:clamp(184px,26.25vh,229px)}
+  .home-hero-copy{padding-top:15px;padding-bottom:15px}
+  .home-hero-copy h1{font-size:clamp(36px,3.525vw,47px);margin-bottom:13px}
+  .hero-rule{width:44px;height:2px}
+  .home-index{padding:9px 0 13px}
+  .home-index-item{min-height:69px;padding-top:4px;padding-right:14px;margin-right:13px}
+  .index-title{font-size:clamp(18px,1.5vw,20px)}
+  .index-rule{width:35px;height:2px;margin:8px 0 7px}
+  .index-arrow{font-size:15px}
+}
+@media(min-width:601px) and (max-width:900px){
+  .home-hero-photo{height:188px}
+  .home-hero-copy{padding-left:6%;padding-right:3%}
+  .home-hero-copy h1{font-size:clamp(33px,4.5vw,39px)}
+  .home-index{padding:7px 0 10px}
+  .home-index-item{min-height:62px;padding-right:9px;margin-right:9px}
+  .index-title{font-size:18px}
+  .index-rule{margin:7px 0 6px}
+}
